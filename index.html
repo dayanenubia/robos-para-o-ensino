@@ -1,202 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Robôs para o Ensino</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="./img/sem fundo/logo_autobots-removebg-preview.png"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
-    />
-  </head>
-  <body class="mx-3" style="margin-top: 150px">
-    <div class="container-fluid">
-      <nav
-        class="navbar navbar-expand-xxl fixed-top navbar-dark"
-        style="background-color: #050b2f"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="img/logo_libertaMinas.png"
-              alt="Logo"
-              width="80"
-              height="70"
-              class="d-inline-block align-text-center rounded-circle"
-              style="border: 3px solid #bf272e"
-            />
-            <span class="ms-3 text-light">ROBÔS PARA O ENSINO</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header" style="background-color: #050b2fb4">
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div
-              class="offcanvas-body m-0 text-light"
-              style="background-color: #050b2f"
-            >
-              <ul
-                class="nav nav-pills mb-3 ms-auto row"
-                id="pills-tab"
-                role="tablist"
-              >
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light active"
-                    id="pills-home-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-home"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-home"
-                    aria-selected="true"
-                  >
-                    Home
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-acoes-do-projeto-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-acoes-do-projeto"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-acoes-do-projeto"
-                    aria-selected="false"
-                  >
-                    Ações do Projeto
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-equipe-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-equipe"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-equipe"
-                    aria-selected="false"
-                  >
-                    Equipe
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-tutoriais-aulas-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-tutoriais-aulas"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-tutoriais-aulas"
-                    aria-selected="false"
-                  >
-                    Tutoriais e Aulas
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-galeria-fotos-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-galeria-fotos"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-galeria-fotos"
-                    aria-selected="false"
-                  >
-                    Galeria de Fotos
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-parceiros-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-parceiros"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-parceiros"
-                    aria-selected="false"
-                  >
-                    Parceiros
-                  </button>
-                </li>
-                <li
-                  class="nav-item col-sm-12 col-xxl-auto p-2"
-                  role="presentation"
-                >
-                  <button
-                    class="nav-link text-light"
-                    id="pills-contato-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-contato"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-contato"
-                    aria-selected="false"
-                  >
-                    Contato
-                  </button>
-                </li>
-              </ul>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Robôs para o Ensino</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="icon" type="image/png" href="./img/sem fundo/logo_autobots-removebg-preview.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+</head>
+<body class="mx-3" style="margin-top: 150px">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-xxl fixed-top navbar-dark" style="background-color: #050b2f">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo_libertaMinas.png" alt="Logo" width="80" height="70" class="d-inline-block align-text-center rounded-circle" style="border: 3px solid #bf272e" />
+          <span class="ms-3 text-light">ROBÔS PARA O ENSINO</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header" style="background-color: #050b2fb4">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body m-0 text-light" style="background-color: #050b2f">
+            <ul class="nav nav-pills mb-3 ms-auto row" id="pills-tab" role="tablist">
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                  Home
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-acoes-do-projeto-tab" data-bs-toggle="pill" data-bs-target="#pills-acoes-do-projeto" type="button" role="tab" aria-controls="pills-acoes-do-projeto" aria-selected="false">
+                  Ações do Projeto
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-equipe-tab" data-bs-toggle="pill" data-bs-target="#pills-equipe" type="button" role="tab" aria-controls="pills-equipe" aria-selected="false">
+                  Equipe
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-tutoriais-aulas-tab" data-bs-toggle="pill" data-bs-target="#pills-tutoriais-aulas" type="button" role="tab" aria-controls="pills-tutoriais-aulas" aria-selected="false">
+                  Tutoriais e Aulas
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-galeria-fotos-tab" data-bs-toggle="pill" data-bs-target="#pills-galeria-fotos" type="button" role="tab" aria-controls="pills-galeria-fotos" aria-selected="false">
+                  Galeria de Fotos
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-parceiros-tab" data-bs-toggle="pill" data-bs-target="#pills-parceiros" type="button" role="tab" aria-controls="pills-parceiros" aria-selected="false">
+                  Parceiros
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-prestacao-tab" data-bs-toggle="pill" data-bs-target="#pills-prestacao" type="button" role="tab" aria-controls="pills-prestacao" aria-selected="false">
+                  Prestação de Contas
+                </button>
+              </li>
+              <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
+                <button class="nav-link text-light" id="pills-contato-tab" data-bs-toggle="pill" data-bs-target="#pills-contato" type="button" role="tab" aria-controls="pills-contato" aria-selected="false">
+                  Contato
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- fim da navbar -->
-      </nav>
+      </div>
+    </nav>
+    <!-- Fim da navbar -->
+
       <!-- inicio conteudo -->
       <div class="tab-content" id="pills-tabContent">
         <div
@@ -1693,6 +1572,38 @@
           </div>
           <!-- fim parceiros -->
         </div>
+
+        <div
+          class="tab-pane fade"
+          id="pills-prestacao"
+          role="tabpanel"
+          aria-labelledby="pills-prestacao-tab"
+          tabindex="0"
+        >
+          <!-- inicio prestação -->
+          <h1>Prestação de Contas</h1>
+
+          <section class="project-actions mt-5">
+          <div class="container">
+            <table id="actions-table" class="table">
+              <thead class="custom-blue-header">
+                <tr>
+                  <th>Produto</th>
+                  <th>Descrição</th>
+                  <th>Valor</th>
+                  <th>Link Nota Fiscal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dados da planilha do Google Sheets serão inseridos aqui via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+            
+          <!-- fim prestação -->
+        </div>
         <div
           class="tab-pane fade"
           id="pills-contato"
@@ -1782,5 +1693,6 @@
     </div>
     <!-- fim container -->
     <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
